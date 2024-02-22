@@ -1,0 +1,55 @@
+@import "variables";
+@import "header";
+@import "header-light";
+@import "partners-block";
+@import "violet-block_and_services";
+@import "gallery-block";
+@import "about_us";
+@import "services-entry";
+@import "team";
+@import "publications";
+@import "contact";
+@import "footer";
+
+
+body{
+	font: 16px/26px $Main-font;
+	margin: 0;
+	color: $Main-regular;
+	background-color: $Main-regular-light;	
+}
+.wrap{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+} 
+
+.Grey-block{
+	background-color: $Grey-bg;
+	padding: 0 160px;
+	@media screen and (max-width: 1919px){
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	@media screen and (max-width: 767px){
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+.btn{
+	font: 700 16px/20px $Main-font;
+	display: inline-block;
+	padding: 18px 30px;
+	background-color: $Active-regular;
+	color: $Main-regular-light;
+	border: none;
+	border-radius: 12px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	text-decoration: none;
+	text-align: center;
+}
+.btn:hover{
+	background-color: $Active-hover;
+	box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}

@@ -1,0 +1,313 @@
+.violet-block {
+    background: $Gradient-Supersoft;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+    padding: 0 0 60px;
+    margin: 0 0 80px;
+
+    &::before {
+        content: "";
+        height: 10px;
+        width: calc(100% - 40px);
+        background-color: #CACADB;
+        border-radius: 0 0 12px 12px;
+        left: 20px;
+        top: 100%;
+        position: absolute;
+    }
+
+    &::after {
+        content: "";
+        height: 10px;
+        width: calc(100% - 80px);
+        background-color: #E7E7F2;
+        border-radius: 0 0 12px 12px;
+        left: 40px;
+        top: calc(100% + 10px);
+        position: absolute;
+    }
+}
+
+.violet-block__title {
+    background: url(../img/Symbol.svg) no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0 60px;
+    padding: 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1023px) {
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
+
+.violet-block__slogan {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: $Main-regular-light;
+    margin: 0 30px 114px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.violet-block__scroll-link {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.violet-block__scroll-link::before {
+    content: '';
+    border: solid $Main-regular-light;
+    border-width: 0 0 2px 2px;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 25%;
+    left: 12px;
+    transform: rotate(-45deg);
+}
+
+.violet-block__scroll-link:hover:before,
+.violet-block__scroll-link:hover {
+    border-color: $Accent;
+}
+
+.violet-block__tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0 280px 60px;
+
+    @media screen and (max-width: 1919px) {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    @media screen and (max-width: 1439px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @media screen and (max-width: 1023px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: 30px;
+    }
+}
+
+.violet-block__tabs-list {
+    display: block;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: right;
+    margin: 0;
+    flex-grow: 1;
+    border-right: 4px solid rgba(255, 255, 255, 0.3);
+    padding: 15px 60px 15px 0;
+
+    @media screen and (max-width: 1023px) {
+        display: flex;
+        gap: 30px;
+        width: 100%;
+        border: none;
+        overflow: auto;
+        padding: 0 0 60px;
+
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 0 0 30px;
+    }
+}
+
+.violet-block__tab-item {
+    padding: 0 0 30px;
+
+    @media screen and (max-width: 1023px) {
+        padding: 0;
+    }
+}
+
+.violet-block__tab-item:last-child {
+    padding-bottom: 0;
+}
+
+.violet-block__tab-link {
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: $Grey-text;
+}
+
+.violet-block__tab-link:hover {
+    color: $Accent;
+}
+
+.violet-block__tab-link.violet-block__tab-link_active {
+    background: $Gradient-Red-Text-reverse;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+.violet-block__tabs-holder {
+    flex-shrink: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.violet-block__tab-content {
+    display: none;
+}
+
+.violet-block__tab-content.violet-block__tab-content_active {
+    display: block;
+}
+
+.violet-block__tab-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: $Main-regular-light;
+    margin: 0;
+}
+
+.violet-block__tab-text {
+    font-size: 19px;
+    line-height: 30px;
+    color: $Main-regular-light;
+    margin: 0;
+}
+
+.violet-block__Services-holder {
+    padding: 0 160px;
+
+    @media screen and (max-width: 1919px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.BC-link {
+    display: block;
+    text-decoration: none;
+    color: $Active-regular;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.BC-link:hover {
+    color: $Accent;
+}
+
+.Header-block {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    padding: 0;
+    margin: 0 0 30px;
+    background: $Gradient-Red-Text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+
+    &_services {
+        margin: 0 0 60px;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin: 0 0 30px;
+    }
+}
+
+.violet-block__Services-list {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.violet-block__Services-item {
+    display: block;
+    width: calc(33.33% - 40px);
+
+    @media screen and (max-width: 1023px) {
+        width: calc(50% - 40px);
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.violet-block__Services-img,
+.Services-img {
+    padding: 14px;
+    background: $Main-regular-light;
+    border-radius: 24px;
+    margin-bottom: 30px;
+}
+
+.violet-block__Services-title {
+    color: $Active-regular;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 0 0 15px;
+}
+
+.violet-block__Services-link-holder {
+    margin: 0 0 15px;
+}
+
+.violet-block__Services-link {
+    text-decoration: none;
+    color: $Active-regular;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.violet-block__Services-link:hover {
+    color: $Accent;
+}
+
+.violet-block__Services-text {
+    color: $Main-regular-light;
+    margin: 0;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Publications</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="main">
+            @@include('html/header.html',{"logo":"logo-publications",
+            "light":"light",
+            "change-light":"change-light",
+            "color-change":"color-gray",
+            "color-nav-change":"color-nav",
+            "active-publications":"activete"})
+            <div class="Grey-block">
+                <div class="Publications full-page">
+                    <div class="Publications__tab-btn-holder">
+                        <button class="Publications__tab-btn-btn activete-tab" id="news">news</button>
+                        <button class="Publications__tab-btn-btn" id="articls">articls</button>
+                    </div>
+                    <ul class="Publications__list">
+                        <li class="Publications__item">
+                            <img class="Publications__img" src="img/Publication-1.jpg" alt="#">
+                            <div class="Publications__holder">
+                                <a class="Publications__link" href="#">Equity associate</a>
+                                <p class="Publications__date">April 22</p>
+                                <p class="Publications__text">
+                                    I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…
+                                </p>
+                            </div>
+                        </li>
+                        <li class="Publications__item">
+                            <img class="Publications__img" src="img/Publication-2.jpg" alt="#">
+                            <div class="Publications__holder">
+                                <a class="Publications__link" href="#">Penalty for the Good Corporation: what will happen to Google and
+                                    others for violating the GDPR</a>
+                                <p class="Publications__date">September 29</p>
+                                <p class="Publications__text">
+                                    And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="Publications__item">
+                            <img class="Publications__img" src="img/Publication-3.jpg" alt="#">
+                            <div class="Publications__holder">
+                                <a class="Publications__link" href="#">Millennial Testament</a>
+                                <p class="Publications__date">August 19</p>
+                                <p class="Publications__text">
+                                    What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…
+                                </p>
+                            </div>
+                        </li>
+                        <li class="Publications__item">
+                            <img class="Publications__img" src="img/Publication-4.jpg" alt="#">
+                            <div class="Publications__holder">
+                                <a class="Publications__link" href="#">Language Law: How to Make Your Website Relevant</a>
+                                <p class="Publications__date">August 19</p>
+                                <p class="Publications__text">
+                                    Natalia Kyryk, head of content studio Wordfactory.ua First, it's beautiful! This is the number one argument in favor of the Ukrainian-language site. Secondly, it is effective. IN…
+                                </p>
+                            </div>
+                        </li>
+                        <li class="Publications__item">
+                            <img class="Publications__img" src="img/Publication-5.jpg" alt="#">
+                            <div class="Publications__holder">
+                                <a class="Publications__link" href="#">Reimbursement of the child's tuition fees in kindergarten and school</a>
+                                <p class="Publications__date">February 5</p>
+                                <p class="Publications__text">
+                                  What we are talking about In June this year, the Verkhovna Rada amended the Tax Code of Ukraine. From now on, parents who receive an official…
+                                </p>
+                            </div>
+                        </li>
+                        <li class="Publications__item">
+                            <div class="Publications__holder">
+                                <a class="Publications__link" href="#">Currency control is dead, long live currency control!</a>
+                                <p class="Publications__date">June 14, 2020</p>
+                                <p class="Publications__text">
+                                  Experts hold conferences, round tables and other events on "liberalization of currency legislation."Lawyers-experts-novelists rub their fingers about "ctrl + c / ctrl + v".
+                                </p>
+                            </div>
+                        </li>
+                        <li class="Publications__item">
+                        </li>
+                    </ul>
+                    <a class="Publications__btn btn" href="#">More publications</a>
+                </div>
+                @@include('html/footer.html',{})
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="main">
+            @@include('html/header.html',{"logo":"logo-contact",
+            "light":"light",
+            "change-light":"change-light",
+            "color-change":"color-gray",
+            "color-nav-change":"color-nav",
+            "active-contact":"activete"})
+            <div class="contact-holder">
+                <div class="contact-data">
+                    <ul class="contact-data__list">
+                        <li class="contact-data__item">
+                            <address class="contact-data__address">
+                                <p class="contact-data__address__p">Kyiv,</p>
+                                <p class="contact-data__address__p">Mechnikova str, 14</p>
+                            </address>
+                        </li>
+                        <li class="contact-data__item">
+                            <p class="contact-data__tel">0800 211 927</p>
+                            <a class="contact-data__mail" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+                        </li>
+                        <li class="contact-data__item">
+                            <a href="#" class="contact-data__social-link">
+                                <svg class="contact-data__social-link__svg" width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_72939_948)">
+                                        <path
+                                            d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                                            fill="#24A3FF" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_72939_948">
+                                            <rect width="38" height="38" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="contact-data__social-link__p">Our page<span class="contact-data__social-link__p__span">on facebook</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="contact-form" action="#">
+                    <h1 class="contact-form__title">We would like to help you</h1>
+                    <div class="contact-form__formpart">
+                        <input class="contact-form__field" type="text" name="clientname" id="name" placeholder="Name">
+                        <textarea class="contact-form__field" name="usermessege" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div class="contact-form__formpart">
+                        <h3 class="contact-form__formpart__head">How to answer you?</h3>
+                        <input class="contact-form__field" type="tel" name="usertel" id="phone" placeholder="Phone number">
+                        <input class="contact-form__field" type="email" name="useremail" id="email" placeholder="Email">
+                    </div>
+                    <button class="contact-form__btn btn">Send message</button>
+                </form>
+            </div>
+            <div class="Grey-block">
+                @@include('html/footer.html',{})
+            </div>
+        </div>
+    </div>
+</body>
+</html>

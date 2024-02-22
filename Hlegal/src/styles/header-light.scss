@@ -1,0 +1,31 @@
+.header__lang-link.color-gray:hover {
+    background: $Grey-bg;
+    border-radius: 8px;
+}
+.header__tel.tel.color-gray {
+    color: $Grey-text;
+}
+.header__tel.tel.color-gray:hover {
+    border-bottom: 2px solid $Grey-text;
+}
+.Header__social-link.color-gray path {
+    fill: $Grey-text;
+}
+.Header__social-link.color-gray:hover path {
+    fill: $Accent;
+}
+.header__nav-btn.light{
+    background-color: $Main-regular-light;
+}
+.change-light{
+    background-color: $Main-regular;
+}
+.header__nav-link.color-nav {
+    color: $Active-regular;
+}
+.header__nav-link.color-nav:hover {
+    border-bottom: 2px solid $Active-regular;
+}
+.color-gray {
+    color: $Grey-text;
+}
